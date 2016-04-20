@@ -30,7 +30,11 @@ it will create project solution in folder which consist:
 6. common/models directory: Created when you create a model with the model generator, apic create --type model.
 A JSON file and a JavaScript file for each model (for example, my-model.json and my-model.js).
 
+**Usefull command to work with StrongLoop**
 
+1. Create project ```slc loopback```
+2. Create model ```slc loopback:model```
+3. Run App ```node .```
 
 
 
