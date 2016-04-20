@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sample App User Roll Base Access</title>
+    <style>
+      .loginbox{
+        margin: 0px auto;
+        padding: 66px;
+        width: 160px;
+        height: 73px;
+        border: 2px solid #39C8FF;
+        box-shadow: 8px 9px 13px #39C8FF;
+        margin-top: 6%;
+      }
+    </style>
+  </head>
+  <body>
+<div class="loginbox">
+  <form action="/departments" method="post">
+    <input type="text" name="email"  placeholder="Email"><br>
+    <input type="password" name="password"  placeholder="Password"><br>
+    <input type="submit" value="Login">
+  </form>
+  <% if (loginFailed) { %>
+
+      <span style="color:red">Login failed, please try again</span>
+
+  <% } %>
+</div>
+  </body>
+</html>

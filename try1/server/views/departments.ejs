@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>LoopBack example access control</title>
+  </head>
+  <body>
+  <h1>Hi <% if (typeof username !== 'undefined') { %> - Welcome <%=
+      username %><% } %></h1>
+
+
+  <hr>
+
+  <a href="/api/departments<% if (typeof accessToken !== 'undefined') {
+  %>?access_token=<%= accessToken %><% } %>">View all Department
+    </a>
+
+  <hr>
+  <a href="/logout<% if (typeof accessToken !==
+    'undefined') { %>?access_token=<%= accessToken %><% } %>">Log
+    out</a>
+  </body>
+</html>
